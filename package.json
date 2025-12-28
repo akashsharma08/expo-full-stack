@@ -1,0 +1,13 @@
+{
+  "name": "full-stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix api && npm install --prefix admin && npm run build --prefix admin",
+    "start": "npm run start --prefix api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
