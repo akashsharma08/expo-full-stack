@@ -1,13 +1,12 @@
 import { Inngest } from "inngest";
-import connectDB from "./db";
+import { connectDB } from "./db.js";
 
-import User from "../models/user.model";
+import User from "../models/user.model.js";
 
-const inngest = new Inngest({
+export const inngest = new Inngest({
   id: "ecomm-app",
 });
 
-export default inngest;
 const syncUser = inngest.createFunction(
   {
     id: "sync-user",
